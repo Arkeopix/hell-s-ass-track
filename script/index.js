@@ -17,6 +17,6 @@ window.onload=function() {
 	img.setAttribute( 'src', 'assets/150px-Blue_sphere.svg.png' );
 	img.setAttribute( 'height', '50px' );
 	img.setAttribute( 'width', '50px' );
-	red.appendChild( img );
+	blue.appendChild( img );
     }
 }
