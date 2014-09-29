@@ -24,8 +24,12 @@ function dragThisShit() {
 }
 
 function resetPlayers( color ) {
-    console.log( document.getElementById( color ) );
-    document.getElementById( color ).classList.remove( 'drag_ok' );
+    console.log( document.getElementById( color ).classList );
+    for ( var i = 0; i < 10; i++ ) {
+	var to_del = document.getElementById( color + i );
+	to_del.parentNode.removeChild( to_del );
+    }
+    createTeam( color );
 }
 
 function createTeam( color ) {
@@ -33,6 +37,7 @@ function createTeam( color ) {
     for ( var i = 0; i < 10; i++ ) {
 	var img = document.createElement( 'img' );
 	img.setAttribute( 'class', 'drag_ok' );
+	img.setAttribute( 'id', color + i );
 	img.setAttribute( 'src', 'assets/' + color + 'dot.jpg' );
 	img.setAttribute( 'dragable', 'true' );
 	img.setAttribute( 'height', '50px' );
