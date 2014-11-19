@@ -17,6 +17,16 @@ body {
     max-width: 100%;
 }
 
+#blue {
+  width: 500px;
+  float: right;
+}
+
+#red {
+  width: 500px;
+  float: left;
+}
+
 .drag_ok {
     cursor: move;
 }
