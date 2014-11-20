@@ -1,20 +1,21 @@
 body {
-  background-image: url('../assets/back_image.png');
-}
-
-#header {
-    width: 100%;
-    height: 50px;
-    text-align: center;
+  background-image: url( '../assets/back_image.png' );
 }
 
 #track_div {
-    height: 550px;
-    text-align: center;
+  height: 700px;
+  position: relative;
+  text-align: center;
 }
-#track_div img {
-    max-height: 100%;
-    max-width: 100%;
+#track_img {
+  max-height: 100%;
+  max-width: 100%;
+}
+#bench {
+  position: absolute;
+  top: 30%;
+  height: 50%;
+  left: 12%;
 }
 
 #blue {

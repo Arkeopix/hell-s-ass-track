@@ -35,8 +35,8 @@ function createTeam( color ) {
 
     img.setAttribute( 'src', str_attribute );
     img.setAttribute( 'draggable', 'true' );
-	  img.setAttribute( 'height', '35px' );
-    img.setAttribute( 'width', '35px' );
+	  img.setAttribute( 'height', '26px' );
+    img.setAttribute( 'width', '26px' );
     img.onmousedown = dragThisShit;
     img.ondragstart = function() { return false }
     team.appendChild( img );
